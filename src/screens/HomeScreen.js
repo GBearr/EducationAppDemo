@@ -8,102 +8,39 @@ import {
   TouchableOpacity,
   ScrollView,
 } from 'react-native';
-import ImageData from '../../ImageData';
+import subjectArray from '../../subjectArray';
+import lectureList from '../../lectureList';
 
 const HomeScreen = ({navigation}) => {
-  const data = ImageData();
-  console.log(data.shorttitle);
+  const subjectData = subjectArray();
+  const lectureData = lectureList();
+  console.log(subjectData.shorttitle);
 
   return (
     <ScrollView style={{backgroundColor: '#09182b', flex: 1}}>
       <View>
-        <Text style={styles.textStyle}>Biology {' >'}</Text>
         <FlatList
-          data={data.biologyData}
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          ItemSeparatorComponent={() => <View style={{width: 20}} />}
+          data={lectureData.lectureData}
+          style={{}}
           renderItem={item => (
-            <TouchableOpacity style={{width: 100, height: 150}}>
-              <Image
-                style={styles.imageStyle}
-                source={{uri: item.item.image}}
-                resizeMode="contain"
+            <View>
+              <Text style={styles.textStyle}>{item.item.name}</Text>
+              <FlatList
+                data={subjectData.subjectData}
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                ItemSeparatorComponent={() => <View style={{width: 20}} />}
+                renderItem={item => (
+                  <TouchableOpacity style={{width: 100, height: 150}}>
+                    <Image
+                      style={styles.imageStyle}
+                      source={{uri: item.item.image}}
+                      resizeMode="contain"
+                    />
+                  </TouchableOpacity>
+                )}
               />
-              <Text style={styles.textStyle}>{item.item.shorttitle}</Text>
-            </TouchableOpacity>
-          )}
-        />
-      </View>
-      <View>
-        <Text style={styles.textStyle}>Chemical {' >'}</Text>
-        <FlatList
-          data={data.chemicalData}
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          ItemSeparatorComponent={() => <View style={{width: 20}} />}
-          renderItem={item => (
-            <TouchableOpacity style={{width: 100, height: 150}}>
-              <Image
-                style={styles.imageStyle}
-                source={{uri: item.item.image}}
-                resizeMode="contain"
-              />
-            </TouchableOpacity>
-          )}
-        />
-      </View>
-      <View>
-        <Text style={styles.textStyle}>History {' >'}</Text>
-        <FlatList
-          data={data.historyData}
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          ItemSeparatorComponent={() => <View style={{width: 20}} />}
-          renderItem={item => (
-            <TouchableOpacity style={{width: 100, height: 150}}>
-              <Image
-                style={styles.imageStyle}
-                source={{uri: item.item.image}}
-                resizeMode="contain"
-              />
-            </TouchableOpacity>
-          )}
-        />
-      </View>
-      <View>
-        <Text style={styles.textStyle}>Math {' >'}</Text>
-        <FlatList
-          data={data.mathData}
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          ItemSeparatorComponent={() => <View style={{width: 20}} />}
-          renderItem={item => (
-            <TouchableOpacity style={{width: 100, height: 150}}>
-              <Image
-                style={styles.imageStyle}
-                source={{uri: item.item.image}}
-                resizeMode="contain"
-              />
-            </TouchableOpacity>
-          )}
-        />
-      </View>
-      <View>
-        <Text style={styles.textStyle}>Pyhsics {' >'}</Text>
-        <FlatList
-          data={data.physicsData}
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          ItemSeparatorComponent={() => <View style={{width: 20}} />}
-          renderItem={item => (
-            <TouchableOpacity style={{width: 100, height: 150}}>
-              <Image
-                style={styles.imageStyle}
-                source={{uri: item.item.image}}
-                resizeMode="contain"
-              />
-            </TouchableOpacity>
+            </View>
           )}
         />
       </View>
