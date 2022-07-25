@@ -13,14 +13,10 @@ import {FlatList} from 'react-native-gesture-handler';
 
 const ContentDetail = ({navigation}) => {
   const subjectData = subjectArray();
-  console.log(
-    'asdsadasfsdfsdfsdafsafdsafsdafmlskglsfdglşsfdmvkdvmlgkmsfdmgfdmsl',
-    navigation.state.params.similarContent,
-  );
 
   return (
     <View style={{backgroundColor: '#09182b', flex: 1}}>
-      <View>
+      <ScrollView>
         <View style={{position: 'relative'}}>
           <Image
             source={{uri: navigation.state.params.image}}
@@ -68,7 +64,7 @@ const ContentDetail = ({navigation}) => {
             )}
           />
         </View>
-      </View>
+      </ScrollView>
     </View>
   );
 };
