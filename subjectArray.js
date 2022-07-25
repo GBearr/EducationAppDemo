@@ -167,7 +167,7 @@ const subjectArray = () => {
         shorttitle: 'Matematik',
         subjectId: 17,
         lectureId: 44,
-        conten: 'Cikarma',
+        content: 'Cikarma',
         description:
           'Çıkarma, temel aritmetik işlemlerden biridir. İki sayının farkının alınması işlemidir.',
       },

@@ -41,6 +41,11 @@ const HomeScreen = props => {
                         description: item.item.description,
                         content: item.item.content,
                         image: item.item.image,
+                        similarContent: subjectData.subjectData.filter(
+                          i =>
+                            i.lectureId === item.item.lectureId &&
+                            i.content !== item.item.content,
+                        ),
                       })
                     }>
                     <Image
