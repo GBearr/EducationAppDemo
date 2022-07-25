@@ -2,23 +2,23 @@ const lectureList = () => {
   return {
     lectureData: [
       {
-        lectureId: 1,
+        lectureId: 41,
         name: 'Biyoloji',
       },
       {
-        lectureId: 2,
+        lectureId: 42,
         name: 'Kimya',
       },
       {
-        lectureId: 3,
+        lectureId: 43,
         name: 'Tarih',
       },
       {
-        lectureId: 4,
+        lectureId: 44,
         name: 'Matematik',
       },
       {
-        lectureId: 5,
+        lectureId: 45,
         name: 'Fizik',
       },
     ],

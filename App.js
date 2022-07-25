@@ -1,15 +1,15 @@
 import {createStackNavigator} from 'react-navigation-stack';
 import {createAppContainer} from 'react-navigation';
 import HomeScreen from './src/screens/HomeScreen';
-import HomeScreen2 from './src/screens/HomeScreen2';
+import ContentDetail from './src/screens/ContentDetail';
 
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
-    Home2: HomeScreen2,
+    Content: ContentDetail,
   },
   {
-    initialRouteName: 'Home2',
+    initialRouteName: 'Home',
     defaultNavigationOptions: {
       title: 'Education App Demo',
     },
