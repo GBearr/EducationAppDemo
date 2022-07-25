@@ -47,10 +47,24 @@ const ContentDetail = ({navigation}) => {
             horizontal
             data={navigation.state.params.similarContent}
             renderItem={item => (
-              <Image
-                style={styles.imageStyle2}
-                source={{uri: item.item.image}}
-              />
+              <TouchableOpacity
+                onPress={() =>
+                  navigation.navigate('Content', {
+                    description: item.item.description,
+                    content: item.item.content,
+                    image: item.item.image,
+                    similarContent: subjectData.subjectData.filter(
+                      i =>
+                        i.lectureId === item.item.lectureId &&
+                        i.content !== item.item.content,
+                    ),
+                  })
+                }>
+                <Image
+                  style={styles.similarContentImage}
+                  source={{uri: item.item.image}}
+                />
+              </TouchableOpacity>
             )}
           />
         </View>
@@ -64,6 +78,12 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 250,
     borderRadius: 10,
+  },
+  similarContentImage: {
+    width: 100,
+    height: 150,
+    borderRadius: 10,
+    margin: 5,
   },
   imageStyle2: {
     width: 100,
@@ -93,6 +113,8 @@ const styles = StyleSheet.create({
     borderColor: 'white',
     borderRadius: 20,
     position: 'absolute',
+    marginTop: 5,
+    marginLeft: 5,
   },
   buttonTextStyle: {
     color: 'white',
