@@ -11,7 +11,7 @@ import {
 import subjectArray from '../../subjectArray';
 import lectureList from '../../lectureList';
 
-const HomeScreen = () => {
+const HomeScreen2 = () => {
   const subjectData = subjectArray();
   const lectureData = lectureList();
   const filter = subjectData.subjectData.filter(objectName => {
@@ -71,4 +71,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen;
+export default HomeScreen2;
