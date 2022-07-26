@@ -25,9 +25,10 @@ const ContentDetail = ({navigation}) => {
           />
           <TouchableOpacity
             style={styles.buttonStyle}
-            onPress={() => navigation.navigate('Home')}>
+            onPress={() => navigation.pop()}>
             <Text style={styles.buttonTextStyle}>{'<'}</Text>
           </TouchableOpacity>
+          <Image />
         </View>
         <Text style={styles.textStyle}>
           {navigation.state.params.content} {'>'}
@@ -45,7 +46,7 @@ const ContentDetail = ({navigation}) => {
             renderItem={item => (
               <TouchableOpacity
                 onPress={() =>
-                  navigation.navigate('Content', {
+                  navigation.push('Content', {
                     description: item.item.description,
                     content: item.item.content,
                     image: item.item.image,

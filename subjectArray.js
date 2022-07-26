@@ -6,6 +6,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Biyoloji',
         subjectId: 1,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 41,
         content: 'Canlıların Ortak Özellikleri',
         description:
@@ -16,6 +17,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12485293/pexels-photo-12485293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Biyoloji',
         subjectId: 2,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 41,
         content: 'Canlıların Ortak Bileşenleri',
         description:
@@ -26,6 +28,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/10669636/pexels-photo-10669636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Biyoloji',
         subjectId: 3,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 41,
         content: 'Canlıların Sınıflandırılması',
         description:
@@ -36,6 +39,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12507122/pexels-photo-12507122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Biyoloji',
         subjectId: 4,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 41,
         content: 'Kalıtım Nedir',
         description:
@@ -46,6 +50,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12341504/pexels-photo-12341504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Biyoloji',
         subjectId: 5,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 41,
         content: 'Ekosistem',
         description:
@@ -56,6 +61,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Kimya',
         subjectId: 6,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 42,
         content: 'Kimya Bilimi Nedir',
         description:
@@ -66,6 +72,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12485293/pexels-photo-12485293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Kimya',
         subjectId: 7,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 42,
         content: 'Modern Atom Teorisi Nedir',
         description:
@@ -76,6 +83,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/10669636/pexels-photo-10669636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Kimya',
         subjectId: 8,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 42,
         content: 'Maddenin Halleri',
         description:
@@ -86,6 +94,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12507122/pexels-photo-12507122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Kimya',
         subjectId: 9,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 42,
         content: 'Periyodik Sistem',
         description:
@@ -96,6 +105,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12341504/pexels-photo-12341504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Kimya',
         subjectId: 10,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 42,
         content: 'Sıvı Çözeltiler',
         description:
@@ -106,6 +116,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Tarih',
         subjectId: 11,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 43,
         content: '1.Dünya Savaşı',
         description:
@@ -116,6 +127,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12485293/pexels-photo-12485293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Tarih',
         subjectId: 12,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 43,
         content: '2.Dünya Savaşı',
         description:
@@ -126,6 +138,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/10669636/pexels-photo-10669636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Tarih',
         subjectId: 13,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 43,
         content: 'TBMM Kuruluşu',
         description:
@@ -136,6 +149,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12507122/pexels-photo-12507122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Tarih',
         subjectId: 14,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 43,
         content: 'İlk Uygarlıklar',
         description:
@@ -146,6 +160,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12341504/pexels-photo-12341504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Tarih',
         subjectId: 15,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 43,
         content: 'Paranın İcadı',
         description:
@@ -156,6 +171,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Matematik',
         subjectId: 16,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 44,
         content: 'Toplama',
         description:
@@ -166,6 +182,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12485293/pexels-photo-12485293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Matematik',
         subjectId: 17,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 44,
         content: 'Cikarma',
         description:
@@ -176,6 +193,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/10669636/pexels-photo-10669636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Matematik',
         subjectId: 18,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 44,
         content: 'Çarpım',
         description:
@@ -186,6 +204,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12507122/pexels-photo-12507122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Matematik',
         subjectId: 19,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 44,
         content: 'Bölme',
         description:
@@ -196,6 +215,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12341504/pexels-photo-12341504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Matematik',
         subjectId: 20,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 44,
         content: 'Kök Alma',
         description:
@@ -206,6 +226,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Fizik',
         subjectId: 21,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 45,
         content: 'Madde Nedir',
         description:
@@ -216,6 +237,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12485293/pexels-photo-12485293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Fizik',
         subjectId: 22,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 45,
         content: 'Kuvvet Nedir',
         description:
@@ -226,6 +248,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/10669636/pexels-photo-10669636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Fizik',
         subjectId: 23,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 45,
         content: 'Hareket Nedir',
         description:
@@ -236,6 +259,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12507122/pexels-photo-12507122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Fizik',
         subjectId: 24,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 45,
         content: 'Isı Nedir',
         description:
@@ -246,6 +270,7 @@ const subjectArray = () => {
           'https://images.pexels.com/photos/12341504/pexels-photo-12341504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Fizik',
         subjectId: 25,
+        playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 45,
         content: 'Sıcaklık Nedir',
         description:
