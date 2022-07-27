@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   Text,
   View,
@@ -6,23 +6,38 @@ import {
   StyleSheet,
   TextInput,
   TouchableOpacity,
+  Alert,
 } from 'react-native';
+import LoginData from '../../login';
 
 const LoginScreen = ({navigation}) => {
+  const loginData = LoginData();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
     <KeyboardAvoidingView style={styles.container} behavior="padding">
       <View style={styles.inputContainer}>
-        <TextInput placeholder="Email" style={styles.input} />
+        <TextInput
+          placeholder="Email"
+          style={styles.input}
+          value={email}
+          onChangeText={text => setEmail(text)}
+        />
         <TextInput
           placeholder="Password"
           style={styles.input}
+          value={password}
+          onChangeText={text => setPassword(text)}
           secureTextEntry
         />
       </View>
       <View style={styles.buttonContainer}>
         <TouchableOpacity
           style={styles.button}
-          onPress={() => navigation.navigate('Home')}>
+          onPress={() => {
+            if (loginData.password === password) navigation.navigate('Home');
+          }}>
           <Text style={styles.buttonText}>Login</Text>
         </TouchableOpacity>
         <TouchableOpacity

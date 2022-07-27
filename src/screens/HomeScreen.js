@@ -6,12 +6,11 @@ import {
   Image,
   FlatList,
   TouchableOpacity,
-  ScrollView,
 } from 'react-native';
 import subjectArray from '../../subjectArray';
 import lectureList from '../../lectureList';
 
-const HomeScreen = props => {
+const HomeScreen = ({props, navigation}) => {
   const subjectData = subjectArray();
   const lectureData = lectureList();
 
