@@ -10,7 +10,7 @@ import {
 import subjectArray from '../../subjectArray';
 import lectureList from '../../lectureList';
 
-const HomeScreen = ({props, navigation}) => {
+const HomeScreen = props => {
   const subjectData = subjectArray();
   const lectureData = lectureList();
 

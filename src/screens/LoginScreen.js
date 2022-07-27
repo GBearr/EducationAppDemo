@@ -6,7 +6,6 @@ import {
   StyleSheet,
   TextInput,
   TouchableOpacity,
-  Alert,
 } from 'react-native';
 import LoginData from '../../login';
 
