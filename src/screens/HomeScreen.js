@@ -9,6 +9,10 @@ import {
 } from 'react-native';
 import subjectArray from '../../subjectArray';
 import lectureList from '../../lectureList';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {NavigationContainer} from '@react-navigation/native';
+
+const Tab = createBottomTabNavigator();
 
 const HomeScreen = props => {
   const subjectData = subjectArray();

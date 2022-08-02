@@ -11,8 +11,8 @@ import LoginData from '../../login';
 
 const LoginScreen = ({navigation}) => {
   const loginData = LoginData();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('testing');
+  const [password, setPassword] = useState('testing');
 
   return (
     <KeyboardAvoidingView style={styles.container} behavior="padding">

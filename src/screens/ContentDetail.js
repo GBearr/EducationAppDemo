@@ -10,16 +10,18 @@ import {
 } from 'react-native';
 import subjectArray from '../../subjectArray';
 import {FlatList} from 'react-native-gesture-handler';
+import {useNavigation} from '@react-navigation/native';
 
-const ContentDetail = ({navigation}) => {
+const ContentDetail = props => {
   const subjectData = subjectArray();
+  const navigation = useNavigation();
 
   return (
     <View style={{backgroundColor: '#09182b', flex: 1}}>
       <ScrollView>
         <View style={{position: 'relative'}}>
           <Image
-            source={{uri: navigation.state.params.image}}
+            source={{uri: props.route.params.image}}
             style={styles.imageStyle}
             resizeMode="contain"
           />
@@ -31,18 +33,18 @@ const ContentDetail = ({navigation}) => {
           <Image />
         </View>
         <Text style={styles.textStyle}>
-          {navigation.state.params.content} {'>'}
+          {props.route.params.content} {'>'}
         </Text>
         <View style={styles.borderStyle}>
           <Text style={styles.textStyle2}>
-            {navigation.state.params.description}
+            {props.route.params.description}
           </Text>
         </View>
         <View>
           <Text style={styles.textStyle}>Benzer İçerikler {'>'}</Text>
           <FlatList
             horizontal
-            data={navigation.state.params.similarContent}
+            data={props.route.params.similarContent}
             renderItem={item => (
               <TouchableOpacity
                 onPress={() =>
