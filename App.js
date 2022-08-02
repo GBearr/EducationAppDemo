@@ -1,12 +1,13 @@
 import {createStackNavigator} from '@react-navigation/stack';
-import {createAppContainer} from 'react-navigation';
 import HomeScreen from './src/screens/HomeScreen';
 import ContentDetail from './src/screens/ContentDetail';
 import LoginScreen from './src/screens/LoginScreen';
 import RegisterScreen from './src/screens/RegisterScreen';
+import ProfilScreen from './src/screens/ProfilScreen';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
+import {Image} from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
@@ -19,8 +20,34 @@ function BottomTabNavigator() {
     <Tab.Navigator
       screenOptions={() => ({
         headerShown: false,
+        headerStyle: {
+          backgroundColor: '#09182b',
+        },
       })}>
-      <Tab.Screen name="Home" component={HomeTabNavigator} />
+      <Tab.Screen
+        name="Ana Ekran"
+        component={HomeTabNavigator}
+        options={{
+          tabBarIcon: () => (
+            <Image
+              source={require('././Icons/home.png')}
+              style={{width: 20, height: 20}}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Hesabım"
+        component={ProfilTabNavigator}
+        options={{
+          tabBarIcon: () => (
+            <Image
+              source={require('././Icons/user.png')}
+              style={{width: 20, height: 20}}
+            />
+          ),
+        }}
+      />
     </Tab.Navigator>
   );
 }
@@ -31,8 +58,19 @@ function HomeTabNavigator() {
       screenOptions={() => ({
         headerShown: false,
       })}>
-      <HomeStack.Screen name="Home" component={HomeScreen} />
+      <HomeStack.Screen name="HomeScreen" component={HomeScreen} />
       <HomeStack.Screen name="Content" component={ContentDetail} />
+    </HomeStack.Navigator>
+  );
+}
+
+function ProfilTabNavigator() {
+  return (
+    <HomeStack.Navigator
+      screenOptions={() => ({
+        headerShown: false,
+      })}>
+      <HomeStack.Screen name="Profil" component={ProfilScreen} />
     </HomeStack.Navigator>
   );
 }
