@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {
   Text,
   View,
@@ -9,33 +9,9 @@ import {
 } from 'react-native';
 import {FlatList} from 'react-native-gesture-handler';
 import profileList from '../../profileList';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import profileSettingsList from '../../profileSettingsList';
-import {useFocusEffect} from '@react-navigation/native';
 
 const ProfileScreen = props => {
   const profileData = profileList();
-  const profileSettingsData = profileSettingsList();
-  const [key, setKey] = useState('');
-
-  useFocusEffect(
-    React.useCallback(() => {
-      storeData();
-      return () => console.log('cikti');
-    }, []),
-  );
-  const storeData = async () => {
-    let counter = await AsyncStorage.getItem('customKey');
-    if (counter === null) {
-      counter = '1';
-      await AsyncStorage.setItem('customKey', '1');
-    } else {
-      counter = parseInt(counter, 10);
-      await AsyncStorage.setItem('customKey', (counter + 1).toString());
-    }
-    console.log('girdi', counter);
-    setKey(counter);
-  };
 
   return (
     <View style={styles.viewStyle}>
@@ -57,33 +33,44 @@ const ProfileScreen = props => {
           )}
         />
       </View>
-      <View style={styles.settingsButtonViewStyle}>
-        <FlatList
-          data={profileSettingsData.profileSettings}
-          numColumns={2}
-          renderItem={item => (
-            <TouchableOpacity style={styles.buttonStyle}>
-              <View style={{alignItems: 'center'}}>
-                <Image
-                  source={{uri: item.item.image}}
-                  style={styles.buttonImageStyle}
-                />
-                <Text style={styles.textStyle}>{item.item.text}</Text>
-              </View>
-            </TouchableOpacity>
-          )}
-        />
-      </View>
-      <View style={styles.quitViewStyle}>
-        <TouchableOpacity
-          style={styles.quitButtonStyle}
-          onPress={() => props.navigation.navigate('Login')}>
-          <Text style={styles.textStyle}>Çıkış</Text>
-        </TouchableOpacity>
-      </View>
-      <View>
-        <Text style={styles.textStyle}>Puan</Text>
-        <Text style={styles.textStyle}>{key}</Text>
+      <View style={styles.allButtonViewStyle}>
+        <View style={styles.buttonViewStyle}>
+          <TouchableOpacity style={styles.buttonStyle}>
+            <Image
+              source={require('../../Icons/settings.png')}
+              style={styles.buttonImageStyle}
+            />
+            <Text style={styles.textStyle}>Ayarlar</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonStyle}>
+            <Image
+              source={require('../../Icons/settings.png')}
+              style={styles.buttonImageStyle}
+            />
+            <Text style={styles.textStyle}>Tivibu Ayarları</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.buttonViewStyle}>
+          <TouchableOpacity style={styles.buttonStyle}>
+            <Image
+              source={require('../../Icons/settings.png')}
+              style={styles.buttonImageStyle}
+            />
+            <Text style={styles.textStyle}>Tivibu Ayarları</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonStyle}>
+            <Image
+              source={require('../../Icons/settings.png')}
+              style={styles.buttonImageStyle}
+            />
+            <Text style={styles.textStyle}>Tivibu Ayarları</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.buttonViewStyle}>
+          <TouchableOpacity style={styles.quitButtonStyle}>
+            <Text style={styles.textStyle}>Çıkış Yap</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
@@ -125,9 +112,8 @@ const styles = StyleSheet.create({
   buttonStyle: {
     borderWidth: 0.5,
     borderColor: 'gray',
-    margin: 5,
-    width: 120,
-    height: 120,
+    width: 150,
+    height: 150,
     justifyContent: 'space-around',
   },
   allButtonViewStyle: {
