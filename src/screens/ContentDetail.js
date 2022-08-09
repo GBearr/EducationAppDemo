@@ -29,6 +29,12 @@ const ContentDetail = props => {
             onPress={() => navigation.pop()}>
             <Text style={styles.buttonTextStyle}>{'<'}</Text>
           </TouchableOpacity>
+          <TouchableOpacity style={styles.playButtonStyle}>
+            <Image
+              source={require('../../Icons/play.png')}
+              style={styles.playImageStyle}
+            />
+          </TouchableOpacity>
           <Image />
         </View>
         <Text style={styles.textStyle}>
@@ -77,6 +83,12 @@ const styles = StyleSheet.create({
     height: 250,
     borderRadius: 10,
   },
+  playImageStyle: {
+    width: 100,
+    height: 100,
+    borderRadius: 10,
+    justifyContent: 'center',
+  },
   similarContentImage: {
     width: 100,
     height: 150,
@@ -93,6 +105,9 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 15,
     margin: 10,
+    textAlign: 'center',
+    alignContent: 'center',
+    alignItems: 'center',
   },
   textStyle2: {
     color: 'white',
@@ -113,6 +128,16 @@ const styles = StyleSheet.create({
     position: 'absolute',
     marginTop: 5,
     marginLeft: 5,
+    justifyContent: 'center',
+  },
+  playButtonStyle: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+    position: 'absolute',
+    justifyContent: 'center',
+    marginTop: 70,
+    marginLeft: 150,
   },
   buttonTextStyle: {
     color: 'white',

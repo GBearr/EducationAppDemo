@@ -2,29 +2,16 @@ const profileSettingsData = () => {
   return {
     profileSettings: [
       {
-        image:
-          'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        text: 'Settings',
+        image: require('./Icons/profileSettings.png'),
+        text: 'Ayarlar',
       },
       {
-        image:
-          'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        text: 'Settings',
+        image: require('./Icons/complaint.png'),
+        text: 'Öneri/Şikayet',
       },
       {
-        image:
-          'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        text: 'Settings',
-      },
-      {
-        image:
-          'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        text: 'Settings',
-      },
-      {
-        image:
-          'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        text: 'Settings',
+        image: require('./Icons/ranking.png'),
+        text: 'Sıralama',
       },
     ],
   };

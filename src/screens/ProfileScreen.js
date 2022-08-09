@@ -47,10 +47,7 @@ const ProfileScreen = props => {
           renderItem={item => (
             <TouchableOpacity>
               <View>
-                <Image
-                  source={{uri: item.item.image}}
-                  style={styles.imageStyle}
-                />
+                <Image source={item.item.image} style={styles.imageStyle} />
                 <Text style={styles.textStyle}>{item.item.userName}</Text>
               </View>
             </TouchableOpacity>
@@ -65,10 +62,10 @@ const ProfileScreen = props => {
             <TouchableOpacity style={styles.buttonStyle}>
               <View style={{alignItems: 'center'}}>
                 <Image
-                  source={{uri: item.item.image}}
-                  style={styles.buttonImageStyle}
+                  source={item.item.image}
+                  style={styles.flatButtonImageStyle}
                 />
-                <Text style={styles.textStyle}>{item.item.text}</Text>
+                <Text style={styles.flatTextStyle}>{item.item.text}</Text>
               </View>
             </TouchableOpacity>
           )}
@@ -122,6 +119,11 @@ const styles = StyleSheet.create({
     height: 80,
     borderRadius: 50,
   },
+  flatButtonImageStyle: {
+    width: 40,
+    height: 40,
+    borderRadius: 50,
+  },
   buttonStyle: {
     borderWidth: 0.5,
     borderColor: 'gray',
@@ -159,5 +161,9 @@ const styles = StyleSheet.create({
     color: 'white',
     marginLeft: 10,
     textAlign: 'center',
+  },
+  flatTextStyle: {
+    color: 'white',
+    marginTop: 30,
   },
 });
