@@ -10,6 +10,7 @@ import {
 import subjectArray from '../../subjectArray';
 import {FlatList} from 'react-native-gesture-handler';
 import {useNavigation} from '@react-navigation/native';
+import Video from 'react-native-video';
 
 const ContentDetail = props => {
   const subjectData = subjectArray();
@@ -19,10 +20,14 @@ const ContentDetail = props => {
     <View style={{backgroundColor: '#09182b', flex: 1}}>
       <ScrollView>
         <View style={{position: 'relative'}}>
-          <Image
-            source={{uri: props.route.params.image}}
-            style={styles.imageStyle}
-            resizeMode="contain"
+          <Video
+            source={{
+              uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
+            }}
+            style={styles.video}
+            onError={e => console.log(e)}
+            paused={false}
+            onLoad={console.log('ne bilim amına')}
           />
           <TouchableOpacity
             style={styles.buttonStyle}
@@ -30,10 +35,10 @@ const ContentDetail = props => {
             <Text style={styles.buttonTextStyle}>{'<'}</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.playButtonStyle}>
-            <Image
+            {/* <Image
               source={require('../../Icons/play.png')}
               style={styles.playImageStyle}
-            />
+            /> */}
           </TouchableOpacity>
           <Image />
         </View>
@@ -79,6 +84,11 @@ const ContentDetail = props => {
 
 const styles = StyleSheet.create({
   imageStyle: {
+    width: '100%',
+    height: 250,
+    borderRadius: 10,
+  },
+  video: {
     width: '100%',
     height: 250,
     borderRadius: 10,
