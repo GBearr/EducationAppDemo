@@ -11,6 +11,7 @@ import subjectArray from '../../subjectArray';
 import {FlatList} from 'react-native-gesture-handler';
 import {useNavigation} from '@react-navigation/native';
 import Video from 'react-native-video';
+import {Icon} from 'react-native-vector-icons/Icon';
 
 const ContentDetail = props => {
   const subjectData = subjectArray();
@@ -26,8 +27,7 @@ const ContentDetail = props => {
             }}
             style={styles.video}
             onError={e => console.log(e)}
-            paused={false}
-            onLoad={console.log('ne bilim amına')}
+            controls={true}
           />
           <TouchableOpacity
             style={styles.buttonStyle}

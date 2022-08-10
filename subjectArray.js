@@ -5,6 +5,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Biyoloji',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 1,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 41,
@@ -16,6 +17,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12485293/pexels-photo-12485293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Biyoloji',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 2,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 41,
@@ -27,6 +29,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/10669636/pexels-photo-10669636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Biyoloji',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 3,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 41,
@@ -38,6 +41,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12507122/pexels-photo-12507122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Biyoloji',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 4,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 41,
@@ -49,6 +53,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12341504/pexels-photo-12341504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Biyoloji',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 5,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 41,
@@ -60,6 +65,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Kimya',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 6,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 42,
@@ -71,6 +77,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12485293/pexels-photo-12485293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Kimya',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 7,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 42,
@@ -82,6 +89,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/10669636/pexels-photo-10669636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Kimya',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 8,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 42,
@@ -93,6 +101,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12507122/pexels-photo-12507122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Kimya',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 9,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 42,
@@ -104,6 +113,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12341504/pexels-photo-12341504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Kimya',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 10,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 42,
@@ -115,6 +125,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Tarih',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 11,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 43,
@@ -126,6 +137,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12485293/pexels-photo-12485293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Tarih',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 12,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 43,
@@ -137,6 +149,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/10669636/pexels-photo-10669636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Tarih',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 13,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 43,
@@ -148,6 +161,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12507122/pexels-photo-12507122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Tarih',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 14,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 43,
@@ -159,6 +173,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12341504/pexels-photo-12341504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Tarih',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 15,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 43,
@@ -170,6 +185,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Matematik',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 16,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 44,
@@ -181,6 +197,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12485293/pexels-photo-12485293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Matematik',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 17,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 44,
@@ -192,6 +209,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/10669636/pexels-photo-10669636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Matematik',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 18,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 44,
@@ -203,6 +221,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12507122/pexels-photo-12507122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Matematik',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 19,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 44,
@@ -214,6 +233,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12341504/pexels-photo-12341504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Matematik',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 20,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 44,
@@ -225,6 +245,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Fizik',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 21,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 45,
@@ -236,6 +257,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12485293/pexels-photo-12485293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Fizik',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 22,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 45,
@@ -247,6 +269,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/10669636/pexels-photo-10669636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Fizik',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 23,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 45,
@@ -258,6 +281,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12507122/pexels-photo-12507122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Fizik',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 24,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 45,
@@ -269,6 +293,7 @@ const subjectArray = () => {
         image:
           'https://images.pexels.com/photos/12341504/pexels-photo-12341504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         shorttitle: 'Fizik',
+        uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 25,
         playurl: 'https://www.youtube.com/watch?v=VLJq1ROZ37s',
         lectureId: 45,
