@@ -9,9 +9,6 @@ import {
 } from 'react-native';
 import subjectArray from '../../subjectArray';
 import lectureList from '../../lectureList';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-
-const Tab = createBottomTabNavigator();
 
 const HomeScreen = props => {
   const subjectData = subjectArray();
@@ -22,7 +19,6 @@ const HomeScreen = props => {
       <View>
         <FlatList
           data={lectureData.lectureData}
-          style={{}}
           renderItem={item => (
             <View>
               <Text style={styles.textStyle}>
@@ -55,6 +51,7 @@ const HomeScreen = props => {
                       style={styles.imageStyle}
                       source={{uri: item.item.image}}
                       resizeMode="contain"
+                      onError={e => console.log(e)}
                     />
                   </TouchableOpacity>
                 )}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   View,
   Image,
@@ -11,37 +11,98 @@ import subjectArray from '../../subjectArray';
 import {FlatList} from 'react-native-gesture-handler';
 import {useNavigation} from '@react-navigation/native';
 import Video from 'react-native-video';
-import {Icon} from 'react-native-vector-icons/Icon';
+import {requestFrame} from 'react-native-reanimated/lib/reanimated2/core';
+
+let icon;
+
+function changeIcon(icon) {
+  if (icon == 'play') icon = require('../../Icons/play.png');
+  else icon = require('../../Icons/stop-button.png');
+}
 
 const ContentDetail = props => {
   const subjectData = subjectArray();
   const navigation = useNavigation();
+  const [overlayVis, setOverlayVis] = useState(false);
+  const [paused, setPaused] = useState(null);
+  const [sound, setSound] = useState(false);
 
   return (
     <View style={{backgroundColor: '#09182b', flex: 1}}>
       <ScrollView>
-        <View style={{position: 'relative'}}>
+        <TouchableOpacity
+          style={{position: 'relative'}}
+          onPress={() => {
+            setOverlayVis(true);
+            setPaused(false);
+          }}>
           <Video
             source={{
-              uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
+              uri: 'https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
             }}
+            // ref={ref => {
+            //   this.player = ref;
+            // }}
             style={styles.video}
-            onError={e => console.log(e)}
-            controls={true}
+            paused={paused}
+            muted={sound}
           />
-          <TouchableOpacity
-            style={styles.buttonStyle}
-            onPress={() => navigation.pop()}>
-            <Text style={styles.buttonTextStyle}>{'<'}</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.playButtonStyle}>
-            {/* <Image
-              source={require('../../Icons/play.png')}
-              style={styles.playImageStyle}
-            /> */}
-          </TouchableOpacity>
-          <Image />
-        </View>
+          {overlayVis && (
+            <TouchableOpacity
+              style={{
+                position: 'absolute',
+                width: '100%',
+                height: '100%',
+                alignItems: 'center',
+                alignSelf: 'center',
+                justifyContent: 'center',
+              }}
+              onPress={() => {
+                {
+                  setOverlayVis(false);
+                  setPaused(true);
+                }
+              }}>
+              <TouchableOpacity
+                style={styles.controllerPlayImage}
+                onPress={() => {
+                  setOverlayVis(false);
+                  setPaused(true);
+                }}>
+                <Image
+                  source={
+                    paused
+                      ? require('../../Icons/stop-button.png')
+                      : require('../../Icons/play.png')
+                  }
+                  style={styles.controllerPlayImage}
+                />
+              </TouchableOpacity>
+              <View
+                style={{
+                  position: 'absolute',
+                  width: '100%',
+                  height: '100%',
+                }}>
+                <TouchableOpacity
+                  style={styles.soundImage}
+                  onPress={() => {
+                    setSound(true);
+                  }}>
+                  <Image
+                    source={require('../../Icons/volume.png')}
+                    style={styles.soundImage}
+                  />
+                </TouchableOpacity>
+                <TouchableOpacity
+                  style={styles.buttonStyle}
+                  onPress={() => navigation.pop()}>
+                  <Text style={styles.buttonTextStyle}>{'<'}</Text>
+                </TouchableOpacity>
+              </View>
+            </TouchableOpacity>
+          )}
+        </TouchableOpacity>
         <Text style={styles.textStyle}>
           {props.route.params.content} {'>'}
         </Text>
@@ -83,6 +144,25 @@ const ContentDetail = props => {
 };
 
 const styles = StyleSheet.create({
+  controller: {
+    justifyContent: 'center',
+    alignSelf: 'center',
+    alignItems: 'center',
+    width: 50,
+    height: 50,
+  },
+  controllerPlayImage: {
+    width: 50,
+    height: 50,
+    alignSelf: 'center',
+    justifyContent: 'center',
+  },
+  soundImage: {
+    width: 20,
+    height: 20,
+    marginTop: 105,
+    marginLeft: 10,
+  },
   imageStyle: {
     width: '100%',
     height: 250,
@@ -136,9 +216,8 @@ const styles = StyleSheet.create({
     borderColor: 'white',
     borderRadius: 20,
     position: 'absolute',
-    marginTop: 5,
-    marginLeft: 5,
-    justifyContent: 'center',
+    top: 10,
+    left: 10,
   },
   playButtonStyle: {
     width: 100,
@@ -157,5 +236,4 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
 });
-
 export default ContentDetail;

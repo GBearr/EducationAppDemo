@@ -16,6 +16,11 @@ const profileData = () => {
         userName: 'Veli',
         userId: 3,
       },
+      {
+        image: require('./Icons/woman.png'),
+        userName: 'Eda',
+        userId: 4,
+      },
     ],
   };
 };

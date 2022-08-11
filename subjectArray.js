@@ -3,7 +3,7 @@ const subjectArray = () => {
     subjectData: [
       {
         image:
-          'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/4e/7d/c7/4e7dc7efe965e96428687f12c8a121ca.jpg',
         shorttitle: 'Biyoloji',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 1,
@@ -15,7 +15,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12485293/pexels-photo-12485293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/69/8f/12/698f1209fdcbceea88585aa1e5e3291a.jpg',
         shorttitle: 'Biyoloji',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 2,
@@ -27,7 +27,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/10669636/pexels-photo-10669636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/25/e9/bc/25e9bc6e692a1c735ef36c0cef443e0a.jpg',
         shorttitle: 'Biyoloji',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 3,
@@ -39,7 +39,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12507122/pexels-photo-12507122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/72/4c/b5/724cb5167e3a2e81ff50688514b05c97.jpg',
         shorttitle: 'Biyoloji',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 4,
@@ -51,7 +51,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12341504/pexels-photo-12341504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/f3/45/09/f3450986bca0da51712ee5c48f3f2df9.jpg',
         shorttitle: 'Biyoloji',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 5,
@@ -63,7 +63,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/90/25/95/902595e1028180c57ba25470e9e70100.jpg',
         shorttitle: 'Kimya',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 6,
@@ -75,7 +75,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12485293/pexels-photo-12485293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/5f/2d/12/5f2d122424f3b4350acb31f9abd985b0.jpg',
         shorttitle: 'Kimya',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 7,
@@ -87,7 +87,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/10669636/pexels-photo-10669636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/e6/80/ea/e680ea3322444993e7d78c1f0b5f4754.jpg',
         shorttitle: 'Kimya',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 8,
@@ -99,7 +99,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12507122/pexels-photo-12507122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/69/73/ce/6973ce3ff8eb3ee4731238f7035fa44e.jpg',
         shorttitle: 'Kimya',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 9,
@@ -111,7 +111,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12341504/pexels-photo-12341504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/ea/bb/a1/eabba1638b4c78a3717d834d87a2c26f.jpg',
         shorttitle: 'Kimya',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 10,
@@ -123,7 +123,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/d4/e9/14/d4e914a85e2765ae4ccbfccd45a0af6a.jpg',
         shorttitle: 'Tarih',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 11,
@@ -135,7 +135,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12485293/pexels-photo-12485293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/97/05/8e/97058e77548c75ce0b141371c81d94eb.jpg',
         shorttitle: 'Tarih',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 12,
@@ -147,7 +147,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/10669636/pexels-photo-10669636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/37/9a/c9/379ac931a03c01f81281536e02fbb13e.jpg',
         shorttitle: 'Tarih',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 13,
@@ -159,7 +159,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12507122/pexels-photo-12507122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/4b/dc/4f/4bdc4f54019a71aa42bb323e3b827fc4.jpg',
         shorttitle: 'Tarih',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 14,
@@ -171,7 +171,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12341504/pexels-photo-12341504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/736x/da/5d/9c/da5d9ca6ab033dfa384b3a5f897af8c1.jpg',
         shorttitle: 'Tarih',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 15,
@@ -183,7 +183,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/71/dd/05/71dd05870964a86006aadd22f7a91cd1.jpg',
         shorttitle: 'Matematik',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 16,
@@ -195,7 +195,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12485293/pexels-photo-12485293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/736x/39/92/42/39924210ed827456b36834c26a7e6a8b.jpg',
         shorttitle: 'Matematik',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 17,
@@ -207,7 +207,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/10669636/pexels-photo-10669636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/84/71/ba/8471ba0658870c9c052103f3df334277.jpg',
         shorttitle: 'Matematik',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 18,
@@ -219,7 +219,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12507122/pexels-photo-12507122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/d0/37/bd/d037bd0d99d7e6f6e5a29aa074190ac3.jpg',
         shorttitle: 'Matematik',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 19,
@@ -231,7 +231,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12341504/pexels-photo-12341504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/90/8e/6b/908e6bc8774d62a6f94482564e0c4180.jpg',
         shorttitle: 'Matematik',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 20,
@@ -242,8 +242,7 @@ const subjectArray = () => {
           'Matematikte, karekök işlevi, pozitif bir sayıyı girdi olarak alan ve verilen girdi sayısının karekökünü döndüren bire bir işlev olarak tanımlanır.',
       },
       {
-        image:
-          'https://images.pexels.com/photos/12292899/pexels-photo-12292899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        image: 'https://www.sanalokulumuz.com/resim/maddenin-ozellikleri.png',
         shorttitle: 'Fizik',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 21,
@@ -255,7 +254,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12485293/pexels-photo-12485293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuGRcGWqjoFK26cqjU1afTwp06E9iZmu8aNw&usqp=CAU',
         shorttitle: 'Fizik',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 22,
@@ -267,7 +266,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/10669636/pexels-photo-10669636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'http://esracanturk.weebly.com/uploads/1/1/1/0/11104133/1014467.jpg?353',
         shorttitle: 'Fizik',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 23,
@@ -279,7 +278,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12507122/pexels-photo-12507122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/736x/76/2a/bb/762abb22a86b8e95af73a638fe0d60ee.jpg',
         shorttitle: 'Fizik',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 24,
@@ -291,7 +290,7 @@ const subjectArray = () => {
       },
       {
         image:
-          'https://images.pexels.com/photos/12341504/pexels-photo-12341504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          'https://i.pinimg.com/564x/aa/b5/65/aab565178e638f2db62a08e4e08c5f4a.jpg',
         shorttitle: 'Fizik',
         uri: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
         subjectId: 25,

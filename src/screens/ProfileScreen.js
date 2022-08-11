@@ -43,6 +43,7 @@ const ProfileScreen = props => {
         <FlatList
           data={profileData.profileData}
           horizontal
+          ItemSeparatorComponent={() => <View style={{width: 8}} />}
           showsHorizontalScrollIndicator={false}
           renderItem={item => (
             <TouchableOpacity>
@@ -102,17 +103,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   quitViewStyle: {
-    width: '80%',
-    height: 50,
+    width: '70%',
+    height: 40,
     marginBottom: 20,
     alignItems: 'center',
   },
   quitButtonStyle: {
-    width: '80%',
-    height: 50,
+    width: '70%',
+    height: 40,
     backgroundColor: 'red',
-    alignItems: 'center',
-    textAlign: 'center',
+    justifyContent: 'center',
   },
   buttonImageStyle: {
     width: 80,
@@ -122,11 +122,8 @@ const styles = StyleSheet.create({
   flatButtonImageStyle: {
     width: 40,
     height: 40,
-    borderRadius: 50,
   },
   buttonStyle: {
-    borderWidth: 0.5,
-    borderColor: 'gray',
     margin: 5,
     width: 120,
     height: 120,
@@ -159,7 +156,6 @@ const styles = StyleSheet.create({
   },
   textStyle: {
     color: 'white',
-    marginLeft: 10,
     textAlign: 'center',
   },
   flatTextStyle: {
