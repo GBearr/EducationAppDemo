@@ -159,15 +159,15 @@ const ContentDetail = props => {
                       />
                     </TouchableOpacity>
                   </TouchableOpacity>
-                  <TouchableOpacity
-                    style={styles.buttonStyle}
-                    onPress={() => navigation.pop()}>
-                    <Text style={styles.buttonTextStyle}>{'<'}</Text>
-                  </TouchableOpacity>
                 </View>
               </TouchableOpacity>
             </View>
           )}
+          <TouchableOpacity
+            style={styles.buttonStyle}
+            onPress={() => navigation.pop()}>
+            <Text style={styles.buttonTextStyle}>{'<'}</Text>
+          </TouchableOpacity>
         </TouchableOpacity>
         <Text style={styles.textStyle}>
           {props.route.params.content} {'>'}
