@@ -140,6 +140,27 @@ const ContentDetail = props => {
                     height: '100%',
                   }}>
                   <TouchableOpacity
+                    style={styles.barControlImage}
+                    onPress={() => {
+                      {
+                        setPaused(!paused);
+                        setOverlayVis(overlayVis);
+                        overlayTimer = setTimeout(
+                          () => setOverlayVis(false),
+                          1000,
+                        );
+                      }
+                    }}>
+                    <Image
+                      source={
+                        paused
+                          ? require('../../Icons/stop-button.png')
+                          : require('../../Icons/play.png')
+                      }
+                      style={styles.barControlImage}
+                    />
+                  </TouchableOpacity>
+                  <TouchableOpacity
                     style={styles.soundImage}
                     onPress={() => {
                       setSound(true);
@@ -238,8 +259,8 @@ const styles = StyleSheet.create({
   soundImage: {
     width: 20,
     height: 20,
-    marginTop: 105,
-    marginLeft: 10,
+    marginTop: 43,
+    marginLeft: 30,
   },
   barControlImage: {
     width: 20,
@@ -250,8 +271,8 @@ const styles = StyleSheet.create({
   fullScreenImage: {
     width: 20,
     height: 20,
-    marginLeft: 170,
-    marginTop: 53,
+    marginLeft: 160,
+    marginTop: 23,
     position: 'absolute',
   },
   imageStyle: {
