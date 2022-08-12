@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import {
   View,
   Image,
@@ -11,14 +11,7 @@ import subjectArray from '../../subjectArray';
 import {FlatList} from 'react-native-gesture-handler';
 import {useNavigation} from '@react-navigation/native';
 import Video from 'react-native-video';
-import {requestFrame} from 'react-native-reanimated/lib/reanimated2/core';
-
-let icon;
-
-function changeIcon(icon) {
-  if (icon == 'play') icon = require('../../Icons/play.png');
-  else icon = require('../../Icons/stop-button.png');
-}
+import {style} from 'deprecated-react-native-prop-types/DeprecatedImagePropType';
 
 const ContentDetail = props => {
   const subjectData = subjectArray();
@@ -26,7 +19,22 @@ const ContentDetail = props => {
   const [overlayVis, setOverlayVis] = useState(false);
   const [paused, setPaused] = useState(null);
   const [sound, setSound] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [fullScreen, setFullScreen] = useState(false);
+  const videoRef = useRef();
+  let overlayTimer;
 
+  const backward = () => {
+    videoRef.current.seek(currentTime - 10);
+    clearTimeout(overlayTimer);
+    overlayTimer = setTimeout(() => setOverlayVis(false), 1000);
+  };
+
+  const forward = () => {
+    videoRef.current.seek(currentTime + 10);
+    clearTimeout(overlayTimer);
+    overlayTimer = setTimeout(() => setOverlayVis(false), 1000);
+  };
   return (
     <View style={{backgroundColor: '#09182b', flex: 1}}>
       <ScrollView>
@@ -40,15 +48,14 @@ const ContentDetail = props => {
             source={{
               uri: 'https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
             }}
-            // ref={ref => {
-            //   this.player = ref;
-            // }}
             style={styles.video}
+            ref={videoRef}
+            fullscreen={fullScreen}
             paused={paused}
             muted={sound}
           />
           {overlayVis && (
-            <TouchableOpacity
+            <View
               style={{
                 position: 'absolute',
                 width: '100%',
@@ -56,51 +63,110 @@ const ContentDetail = props => {
                 alignItems: 'center',
                 alignSelf: 'center',
                 justifyContent: 'center',
-              }}
-              onPress={() => {
-                {
-                  setOverlayVis(false);
-                  setPaused(true);
-                }
               }}>
               <TouchableOpacity
-                style={styles.controllerPlayImage}
-                onPress={() => {
-                  setOverlayVis(false);
-                  setPaused(true);
-                }}>
-                <Image
-                  source={
-                    paused
-                      ? require('../../Icons/stop-button.png')
-                      : require('../../Icons/play.png')
-                  }
-                  style={styles.controllerPlayImage}
-                />
-              </TouchableOpacity>
-              <View
                 style={{
                   position: 'absolute',
                   width: '100%',
                   height: '100%',
+                  alignItems: 'center',
+                  alignSelf: 'center',
+                  justifyContent: 'center',
+                }}
+                onPress={() => {
+                  {
+                    {
+                      setOverlayVis(false);
+                      overlayTimer = setTimeout(
+                        () => setOverlayVis(false),
+                        1000,
+                      );
+                    }
+                  }
                 }}>
-                <TouchableOpacity
-                  style={styles.soundImage}
-                  onPress={() => {
-                    setSound(true);
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    justifyContent: 'space-around',
+                    width: '100%',
+                    height: '100%',
                   }}>
-                  <Image
-                    source={require('../../Icons/volume.png')}
+                  <TouchableOpacity
+                    style={styles.backwardImage}
+                    onPress={() => {
+                      backward();
+                    }}>
+                    <Image
+                      source={require('../../Icons/backward.png')}
+                      style={styles.backwardImage}
+                    />
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    style={styles.controllerPlayImage}
+                    onPress={() => {
+                      {
+                        setPaused(!paused);
+                        setOverlayVis(overlayVis);
+                        overlayTimer = setTimeout(
+                          () => setOverlayVis(false),
+                          1000,
+                        );
+                      }
+                    }}>
+                    <Image
+                      source={
+                        paused
+                          ? require('../../Icons/stop-button.png')
+                          : require('../../Icons/play.png')
+                      }
+                      style={styles.controllerPlayImage}
+                    />
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    style={styles.forwardImage}
+                    onPress={() => {
+                      forward();
+                    }}>
+                    <Image
+                      source={require('../../Icons/forward.png')}
+                      style={styles.forwardImage}
+                    />
+                  </TouchableOpacity>
+                </View>
+                <View
+                  style={{
+                    position: 'absolute',
+                    width: '100%',
+                    height: '100%',
+                  }}>
+                  <TouchableOpacity
                     style={styles.soundImage}
-                  />
-                </TouchableOpacity>
-                <TouchableOpacity
-                  style={styles.buttonStyle}
-                  onPress={() => navigation.pop()}>
-                  <Text style={styles.buttonTextStyle}>{'<'}</Text>
-                </TouchableOpacity>
-              </View>
-            </TouchableOpacity>
+                    onPress={() => {
+                      setSound(true);
+                    }}>
+                    <Image
+                      source={require('../../Icons/volume.png')}
+                      style={styles.soundImage}
+                    />
+                    <TouchableOpacity
+                      style={styles.fullScreenImage}
+                      onPress={() => {
+                        setFullScreen(!fullScreen);
+                      }}>
+                      <Image
+                        source={require('../../Icons/full-screen.png')}
+                        style={styles.fullScreenImage}
+                      />
+                    </TouchableOpacity>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    style={styles.buttonStyle}
+                    onPress={() => navigation.pop()}>
+                    <Text style={styles.buttonTextStyle}>{'<'}</Text>
+                  </TouchableOpacity>
+                </View>
+              </TouchableOpacity>
+            </View>
           )}
         </TouchableOpacity>
         <Text style={styles.textStyle}>
@@ -157,11 +223,36 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     justifyContent: 'center',
   },
+  backwardImage: {
+    width: 50,
+    height: 50,
+    justifyContent: 'center',
+    alignSelf: 'center',
+  },
+  forwardImage: {
+    width: 50,
+    height: 50,
+    justifyContent: 'center',
+    alignSelf: 'center',
+  },
   soundImage: {
     width: 20,
     height: 20,
     marginTop: 105,
     marginLeft: 10,
+  },
+  barControlImage: {
+    width: 20,
+    height: 20,
+    marginTop: 105,
+    marginLeft: 10,
+  },
+  fullScreenImage: {
+    width: 20,
+    height: 20,
+    marginLeft: 170,
+    marginTop: 53,
+    position: 'absolute',
   },
   imageStyle: {
     width: '100%',
